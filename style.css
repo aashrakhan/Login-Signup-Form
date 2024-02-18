@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet>');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+body{
+    background: red;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+    position: relative;
+    font-size: 16px;
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #e4e4e4;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+.navbar a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background: url('./images/beautiful-abstract-3d-colored-flower-glowing-flower-petals-black-background-3d-render_91497-8267.avif') no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+.container{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 550px;
+    background: url('./images/beautiful-abstract-3d-colored-flower-glowing-flower-petals-black-background-3d-render_91497-8267.avif') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 80px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content .logo{
+    font-size: 30px;;
+}
+.text h2{
+    font-size: 40px;
+    line-height: 1;
+}
+.text h2 span{
+    font-size: 25px;
+}
+.text p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.icons a i{
+    font-size: 25px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+}
+.icons a:hover i{
+    transform: scale(1.2);
+}
+
+.container .logreg-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    background: transparent;
+}
+.logreg-box .formbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #e4e4e4;
+}
+.formbox h2{
+    font-size: 40px;
+    text-align: center;
+}
+.formbox .inputbox{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 400;
+    padding-right: 28px;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -5px;
+}
+.inputbox .icon2{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 22px;
+}
+.formbox .remember-forgot{
+    font-size: 15px;
+    font-weight: 400;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: #e4e4e4;
+    margin-right: 4px;
+}
+.remember-forgot a{
+    color: #e4e4e4;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: rgb(89, 30, 30);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #e4e4e4;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+.formbox .loginregister{
+   font-size: 18px;
+   font-weight: 300;
+   text-align: center;
+   margin-top: 25px;
+}
+.loginregister p a{
+    color: #e4e4e4;
+    font-weight: 600;
+    text-decoration: none;
+}
+.loginregister p a:hover{
+    text-decoration: underline;
+}
+ 
+ .container2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 600px;
+    background:url('./images/beautiful-abstract-3d-colored-flower-glowing-flower-petals-black-background-3d-render_91497-8267.avif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+.container .userdetails{ 
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 58%; */
+    height: 100vh;
+    /* background: transparent; */
+    padding: 10px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* /* flex-direction: column;  }  */
+}
+.container2{
+    max-width: 800px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.container2 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.container2 form .userdetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0 12px 0 ;
+}
+form .userdetails .outputbox{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.userdetails .outputbox input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width:2px ;
+}
+.userdetails .outputbox .details{
+    display:block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.userdetails .outputbox input:focus,
+.userdetails .outputbox input:valid{
+    border-color: black;
+}
+.userdetails, .genderdetails,.main, .loginregister{
+    color: #e4e4e4;
+}
+form .grnderdetails .grndertitle{
+    font-size: 50px;
+    font-weight: 400;
+}
+form .genderdetails .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.genderdetails .category label{
+    display: flex;
+    align-items: center;
+}
+.genderdetails .category .dotone{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
